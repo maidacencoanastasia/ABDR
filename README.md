@@ -13,13 +13,13 @@ From
 
 To
 
-['TESTBOOL', 'TESTTEXT', 'TESTDATE', 'TESTNUM', 'TESTFLOAT']
-[('L', 1, 0), ('C', 10, 0), ('D', 10, 0), ('N', 10, 0), ('F', 10, 2)]
-['T', 'test0     ', datetime.date(2018, 1, 1), 42, 42.01]
-['F', 'test1     ', datetime.date(2018, 1, 2), 43, 43.02]
-['T', 'test2     ', datetime.date(2018, 1, 3), 44, 44.03]
-....................
-TESTBOOL,TESTTEXT,TESTDATE,TESTNUM,TESTFLOAT
-T,test0     ,2018-01-01,42,42.01
-F,test1     ,2018-01-02,43,43.02
-T,test2     ,2018-01-03,44,44.03
+['TESTBOOL', 'TESTTEXT', 'TESTDATE', 'TESTNUM', 'TESTFLOAT']<br>
+[('L', 1, 0), ('C', 10, 0), ('D', 10, 0), ('N', 10, 0), ('F', 10, 2)]<br>
+['T', 'test0     ', datetime.date(2018, 1, 1), 42, 42.01]<br>
+['F', 'test1     ', datetime.date(2018, 1, 2), 43, 43.02]<br>
+['T', 'test2     ', datetime.date(2018, 1, 3), 44, 44.03]<br>
+....................<br>
+TESTBOOL,TESTTEXT,TESTDATE,TESTNUM,TESTFLOAT<br>
+T,test0     ,2018-01-01,42,42.01<br>
+F,test1     ,2018-01-02,43,43.02<br>
+T,test2     ,2018-01-03,44,44.03<br>
