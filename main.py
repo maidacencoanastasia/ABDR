@@ -6,8 +6,9 @@ Second row -> field specs: (type, size, decimal places).
 Subsequent rows contain the data records.
 If a record is marked as deleted, it is skipped.
 """
-def dbfreader(f):
 
+
+def dbfreader(f):
     # DBF format http://www.pgts.com.au/download/public/xbase.htm#DBF_STRUCT
 
     numrec, lenheader = struct.unpack('<xxxxLH22x', f.read(32))
@@ -65,6 +66,8 @@ def dbfreader(f):
             N for ints or decimal objects
             L for logical values 'T', 'F'
 """
+
+
 def dbfwriter(f, fieldnames, fieldspecs, records):
     # header info
     ver = 3
@@ -106,12 +109,10 @@ def dbfwriter(f, fieldnames, fieldspecs, records):
 
 
 # -------------------------------------------------------
-# Example calls
+
 if __name__ == '__main__':
     import sys, csv
     from cStringIO import StringIO
-    from operator import itemgetter
-    import xlsxwriter
 
     # Read a database
     filename = "bd\\validFile.dbf"
@@ -132,18 +133,18 @@ if __name__ == '__main__':
     # # Remove a field
     # del fieldnames[0]
     # del fieldspecs[0]
-    #records = [rec[1:] for rec in records]
+    # records = [rec[1:] for rec in records]
 
     # Create a new DBF
-    #f = StringIO()
-    #dbfwriter(f, fieldnames, fieldspecs, records)
+    # f = StringIO()
+    # dbfwriter(f, fieldnames, fieldspecs, records)
 
     # Read the data back from the new DBF
-    #print '-' * 20
-    #f.seek(0)
-    #for line in dbfreader(f):
+    # print '-' * 20
+    # f.seek(0)
+    # for line in dbfreader(f):
     #    print line
-    #f.close()
+    # f.close()
 
     # Convert to CSV
     print '.' * 20
@@ -152,7 +153,3 @@ if __name__ == '__main__':
     csv.writer(f).writerows(records)
     print f.getvalue()
     f.close()
-    workbook = xlsxwriter.Workbook('hello.xlsx')
-    worksheet = workbook.add_worksheet()
-    worksheet.write('A1', 'Hello world')
-    workbook.close()
