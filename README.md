@@ -23,3 +23,7 @@ TESTBOOL,TESTTEXT,TESTDATE,TESTNUM,TESTFLOAT<br>
 T,test0     ,2018-01-01,42,42.01<br>
 F,test1     ,2018-01-02,43,43.02<br>
 T,test2     ,2018-01-03,44,44.03<br>
+
+![dbf1](https://user-images.githubusercontent.com/42982928/199990784-5774560e-b3e6-4c02-9352-6f8d4be6d91a.png)
+
+![encoded dbf](https://user-images.githubusercontent.com/42982928/199990798-3c8b5b9c-959e-4821-bbcd-7aefc9513dae.png)
