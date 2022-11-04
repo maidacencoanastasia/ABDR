@@ -111,6 +111,7 @@ if __name__ == '__main__':
     import sys, csv
     from cStringIO import StringIO
     from operator import itemgetter
+    import xlsxwriter
 
     # Read a database
     filename = "bd\\validFile.dbf"
