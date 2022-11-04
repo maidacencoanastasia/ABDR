@@ -52,6 +52,7 @@ def dbfreader(f):
             elif typ == 'F':
                 value = float(value)
             result.append(value)
+            #print(result)
         yield result
 
 
@@ -115,7 +116,7 @@ if __name__ == '__main__':
     from cStringIO import StringIO
 
     # Read a database
-    filename = "bd\\validFile.dbf"
+    filename = "bd\\people.dbf"
     if len(sys.argv) == 2:
         filename = sys.argv[1]
     f = open(filename, 'rb')
