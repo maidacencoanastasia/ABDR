@@ -151,3 +151,7 @@ if __name__ == '__main__':
     csv.writer(f).writerows(records)
     print f.getvalue()
     f.close()
+    workbook = xlsxwriter.Workbook('hello.xlsx')
+    worksheet = workbook.add_worksheet()
+    worksheet.write('A1', 'Hello world')
+    workbook.close()
