@@ -116,7 +116,7 @@ if __name__ == '__main__':
     from cStringIO import StringIO
 
     # Read a database
-    filename = "bd\\people.dbf"
+    filename = "bd\\122016B1.DBF"
     if len(sys.argv) == 2:
         filename = sys.argv[1]
     f = open(filename, 'rb')
